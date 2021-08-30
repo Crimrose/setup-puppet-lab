@@ -41,7 +41,9 @@ Update path for `puppet`
 > echo "Defaults  secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/opt/puppetlabs/bin" >  /etc/sudoers.d/99_extra
 
 Register client node
+
 > sudo puppet agent --fingerprint
+
 > sudo puppet agent --test
 
 On master 

@@ -42,6 +42,7 @@ Update path for `puppet`
 
 Register client node
 > sudo puppet agent --fingerprint
+> sudo puppet agent --test
 
 On master 
 > sudo puppetserver ca sign --certname node1.ec2.internal

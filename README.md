@@ -1,7 +1,7 @@
 # Setup puppet lab environment
 Setup puppet lab environment:
 
-- 1 master, 1 or more client nodes.
+- 1 master with hostname puppet, 1 or more client nodes.
 - Puppet version 5
 - Master using Centos 7
 

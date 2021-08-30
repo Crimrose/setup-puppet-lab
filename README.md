@@ -65,6 +65,6 @@ sudo systemctl start puppet
 sudo systemctl enable puppet
 ```
 
-Test cookbook on client node by running the command
+Test client node by running the command
 
 > puppet agent -t

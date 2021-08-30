@@ -12,15 +12,17 @@ sudo rpm -Uvh https://yum.puppet.com/puppet5-release-el-7.noarch.rpm
 sudo yum install puppetserver
 ```
 
-Then update file `/etc/sysconfig/puppetserver`
-
 Update path for `puppetserver`
 
 > echo "Defaults  secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/opt/puppetlabs/bin" >  /etc/sudoers.d/99_extra
 
+Then update file `/etc/sysconfig/puppetserver`
+
 Change the value below to suitable value
 `JAVA_ARGS="-Xms2g -Xmx2g -XX:MaxPermSize=256m"`
+
 Then start the service `puppetmaster`. It can take few minutes to finish.
+
 ```
 systemctl start puppetmaster
 systemctl status puppetmaster

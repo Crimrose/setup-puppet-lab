@@ -57,7 +57,7 @@ If your client server is using `ubuntu 18` you just need to update the package r
 wget https://apt.puppetlabs.com/puppet5-release-bionic.deb
 sudo dpkg -i puppet5-release-bionic.deb
 sudo apt update
-sudo apt install puppet-agent
+sudo apt install puppet
 sudo systemctl start puppet
 sudo systemctl enable puppet
 ```

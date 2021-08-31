@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
     node.vm.provision "shell", inline: "rpm -Uvh https://yum.puppet.com/puppet5-release-el-7.noarch.rpm"
     node.vm.provision "shell", inline: "sudo yum install -y puppet vim"
     node.vm.provision "shell", inline: <<-SHELL
-    echo "Defaults secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/opt/puppetlabs/bin" > /etc/sudoers.d/99_extra
+      echo "Defaults secure_path = /sbin:/bin:/usr/sbin:/usr/bin:/opt/puppetlabs/bin" > /etc/sudoers.d/99_extra
     SHELL
     node.vm.provision "shell", inline: %q(puppet apply -e "host {'puppet.local': ip => '192.168.50.10', host_aliases => ['puppet']}")
   end
